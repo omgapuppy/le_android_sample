@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".LogentriesTest"
+    android:backgroundTint="#ff070707"
+    android:clickable="true"
+    android:backgroundTintMode="src_over"
+    android:background="#ff000000">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Error"
+        android:onClick="sendMessage"
+        android:id="@+id/errorbutton"
+        android:layout_above="@+id/infobutton"
+        android:layout_alignLeft="@+id/warnbutton"
+        android:layout_alignStart="@+id/warnbutton"
+        android:layout_alignRight="@+id/warnbutton"
+        android:layout_alignEnd="@+id/warnbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Info"
+        android:id="@+id/infobutton"
+        android:layout_marginBottom="99dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/errorbutton"
+        android:layout_alignStart="@+id/errorbutton"
+        android:layout_alignRight="@+id/errorbutton"
+        android:layout_alignEnd="@+id/errorbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Warning"
+        android:id="@+id/warnbutton"
+        android:layout_above="@+id/errorbutton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logentries"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Config"
+        android:id="@+id/configbutton"
+        android:layout_above="@+id/warnbutton"
+        android:layout_alignRight="@+id/warnbutton"
+        android:layout_alignEnd="@+id/warnbutton"
+        android:layout_alignLeft="@+id/warnbutton"
+        android:layout_alignStart="@+id/warnbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Verbose"
+        android:id="@+id/verbosebutton"
+        android:layout_above="@+id/configbutton"
+        android:layout_alignRight="@+id/configbutton"
+        android:layout_alignEnd="@+id/configbutton"
+        android:layout_alignLeft="@+id/configbutton"
+        android:layout_alignStart="@+id/configbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Severe"
+        android:id="@+id/severebutton"
+        android:layout_below="@+id/errorbutton"
+        android:layout_alignLeft="@+id/infobutton"
+        android:layout_alignStart="@+id/infobutton"
+        android:layout_marginTop="47dp"
+        android:layout_alignRight="@+id/infobutton"
+        android:layout_alignEnd="@+id/infobutton" />
+
+
+</RelativeLayout>
